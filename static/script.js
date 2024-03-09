@@ -6,7 +6,7 @@ function buyProduct(productName) {
         headers: {
             'Content-Type': 'application/json'
         },
-        body: JSON.stringify({ product_name: productName })
+        body: JSON.stringify({ "product_name": productName })  // Ensure "product_name" is enclosed in quotes
     })
     .then(response => response.json())
     .then(data => {
